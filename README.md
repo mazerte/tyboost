@@ -279,7 +279,7 @@ After doing this you can use the container in an route like this:
 
 ```js
 router.get('/my-route', (req, res) => {
-    const container = req.app.get('container').get('service1')
+    const container = req.app.get('container')
     const service = container.get('service1')
     const result = service.myFunc()
 
